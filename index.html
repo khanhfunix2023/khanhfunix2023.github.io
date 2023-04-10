@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/tablets.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <img src="./images/bannerpic.jpg" alt="banner" />
+        <div class="banner-name">
+          <h1>Phạm Duy Khánh</h1>
+          <span><i>Full Stack Developer</i></span>
+        </div>
+      </div>
+      <nav class="container">
+        <div class="nav">
+          <a href="#"><i class="icon-user"></i>Thông tin</a>
+        </div>
+        <div class="nav">
+          <a href="#"><i class="icon-doc-text-inv"></i>Lý lịch</a>
+        </div>
+        <!-- <div class="nav">
+          <a href="#">
+            <span>Phạm Duy Khánh</span><br />
+            <span><i>Full Stack Developer</i></span></a
+          >
+        </div> -->
+        <div class="title-01">
+          <img class="avatar" src="./images/avatar.png" alt="avatar" />
+        </div>
+        <div class="nav">
+          <a href="#"><i class="icon-mail-alt"></i>Chứng chỉ</a>
+        </div>
+        <div class="nav">
+          <a href="#"><i class="icon-star-1"></i>Dự án</a>
+        </div>
+      </nav>
+    </header>
+    <section id="about">
+      <div class="target">
+        <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+        <p>
+          Tìm được công việc thích hợp. Làm việc trong một môi trường chuyên
+          nghiệp. Một công việc mà tôi có thể vận dụng được tất cả những kiến
+          thức chuyên môn và kỹ năng của bản thân.
+        </p>
+      </div>
+      <div class="personal-info">
+        <h2 class="section-title">Thông tin cá nhân</h2>
+        <div class="info-hidden">
+          <ul class="info">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 24/05/1993</li>
+            <li><span>Điện thoại</span> : (+84) 332821883</li>
+            <li><span>Email</span> : khanhpd@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : TP Hồ Chí Minh</li>
+            <li><span>Website</span> : khanhpd</li>
+          </ul>
+          <span class="banner-icon"
+            ><i class="icon-twitter"></i><i class="icon-facebook"></i
+            ><i class="icon-gplus"></i><i class="icon-linkedin"></i>
+          </span>
+        </div>
+        <div class="submit-email">
+          <input type="email" id="email" />
+          <p id="error-email"></p>
+          <button class="btn btn-primary" onclick="handleSubmit()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--MAIN JOB INFOMATION-->
+    <section>
+      <!--EXPERIENCE-->
+      <div class="job-info">
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Kinh nghiệm</h2></div>
+          <div class="section-icon"><i class="ic-toolbox"></i></div>
+          <div class="section-content">
+            <ul>
+              <li>
+                <p><b>Nhân viên vận hành máy - DAIMARU</b></p>
+
+                <p>
+                  <i>10/2020 - <span class="now">Hiện tại</span></i>
+                </p>
+
+                <p>-Trực tiếp đứng máy sản xuất hàng bán thành phẩm.</p>
+                <p>-Đảm bảo kiểm tra chất lượng các khâu sản xuất.</p>
+              </li>
+              <br />
+
+              <li>
+                <p><b>Nhân viên quản lý chất lượng - LOCK&LOCK</b></p>
+                <p><i>6/2016 - 08/2020</i></p>
+
+                <p>
+                  -Quản lý chất lượng bán thành phẩm, kiêm tra nguyên liệu đầu
+                  vào.
+                </p>
+                <p>
+                  -Tiến hành giải quyết các công việc liên quan và báo cáo cấp
+                  trên.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+
+        <!--EDUCATION-->
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Học vấn</h2></div>
+          <div class="section-icon"><i class="ic-pencil"></i></div>
+          <div class="section-content">
+            <ul>
+              <li>
+                <p><b>FUNIX</b></p>
+
+                <p>
+                  <i>02/2023 - <span class="now">Hiện tại</span></i>
+                </p>
+
+                <p>Chứng chỉ doanh nghiệp nhánh Fullstack.</p>
+                <p>(Đang theo học)</p>
+              </li>
+              <br />
+
+              <li>
+                <b>ĐH Tôn Đức Thắng</b>
+                <p><i>11/2011 - 06/2016</i></p>
+                <p>Tốt nghiệp ngành công nghê hoá học.</p>
+                <p>GPA: 7.52 / 10</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+        <!--ACTIVITY-->
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Hoạt động</h2></div>
+          <div class="section-icon"><i class="ic-toolbox"></i></div>
+          <div class="section-content">
+            <ul>
+              <li>
+                <p><b>Câu lạc bộ tiếng Nhật Kadoma</b></p>
+
+                <p>
+                  <i>05/2021 - <span class="now">Hiện tại</span></i>
+                </p>
+
+                <p>Thành viên câu lạc bộ</p>
+              </li>
+              <br />
+
+              <li>
+                <p><b>Câu lạc bộ cầu lông trường ĐH Tôn Đức Thắng</b></p>
+                <p><i>01/2015 - 03/2016</i></p>
+                <p>Thành viên câu lạc bộ</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+        <!--HOBBY-->
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Sở thích</h2></div>
+          <div class="section-icon"><i class="ic-telescope"></i></div>
+          <div class="section-content">
+            <div class="hobby-icon">
+              <div class="hobby-icon1"><i class="ic-megaphone"></i></div>
+              <div class="hobby-icon2"><i class="ic-strategy"></i></div>
+              <div class="hobby-icon3"><i class="ic-hotairballoon"></i></div>
+              <div class="hobby-icon4"><i class="ic-basket"></i></div>
+            </div>
+            <div class="hobby">
+              <div class="hobby1">Âm nhạc</div>
+              <div class="hobby2">Cờ vua</div>
+              <div class="hobby3">Du lịch</div>
+              <div class="hobby4">Nấu ăn</div>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+        <!--SKILLS-->
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Kỹ năng</h2></div>
+          <div class="section-icon"><i class="ic-tools-2"></i></div>
+          <div class="section-content">
+            <div class="skill">
+              <p>CAD 2D/3D - Fundamental</p>
+              <span class="level-01"></span><span class="level-00"></span
+              ><span class="level-00"></span><br /><br />
+              <p>SOLIDWORKS - Fundamental</p>
+              <span class="level-01"></span><span class="level-00"></span
+              ><span class="level-00"></span>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+        <!--LANGUAGE-->
+        <div
+          class="section-container"
+          onmouseover="handleOnMouseOver(this)"
+          onmouseout="handleOnMouseOut(this)"
+        >
+          <div class="title"><h2>Ngoại ngữ</h2></div>
+          <div class="section-icon"><i class="ic-mic"></i></div>
+          <div class="section-content">
+            <div class="skill">
+              <p>JLPT N2</p>
+              <span class="level-01"></span><span class="level-01"></span
+              ><span class="level-00"></span><br /><br />
+              <p>TOEIC 750</p>
+              <span class="level-01"></span><span class="level-01"></span
+              ><span class="level-00"></span>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary view-more control-view"
+              onclick="handleViewMore(this)"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ACHIEVEMENT-->
+    <section>
+      <div>
+        <div class="title"><h2>Bằng cấp - Chứng nhận</h2></div>
+        <div class="certification">
+          <div>
+            <div>
+              <img
+                src="./images/cert01.png"
+                alt="certificate"
+                style="width: 180px; height: 100px; object-fit: cover"
+              />
+            </div>
+            <br />
+            <div>
+              <p>Bằng kỹ sư hoá học</p>
+
+              <p>2016</p>
+              <p>GPA 7.52</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="./images/cert02.png"
+                alt="certificate"
+                style="width: 200px; height: 100px; object-fit: cover"
+              />
+            </div>
+            <br />
+            <div>
+              <p>Bằng tiếng Anh (TOEIC)</p>
+
+              <p>2016</p>
+              <p>Level 750</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="./images/cert03.png"
+                alt="certificate"
+                style="width: 170px; height: 100px; object-fit: cover"
+              />
+            </div>
+            <br />
+            <div>
+              <p>Bằng tiếng Nhật</p>
+
+              <p>2023</p>
+              <p>JLPT N2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--PROJECT-->
+    <section>
+      <div>
+        <div class="title"><h2>Dự án</h2></div>
+        <div class="project-info">
+          <div class="project-01">
+            <img
+              src="./images/project01.png"
+              alt="project01"
+              style="width: 100%; height: 400px; object-fit: cover"
+            />
+            <div class="project-title">
+              <p>QUẢN LÝ CHẤT LƯỢNG DOANH NGHIỆP</p>
+            </div>
+            <div class="project-rol">
+              <i class="now">2018</i><i class="icon-user-1"></i>QLCLQ3<i
+                class="icon-lamp"
+              ></i
+              >Member
+            </div>
+            <table class="project-content">
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Phối hợp với các thành viên khác thiết lập tiêu chí đánh giá
+                  chỗ từng doanh nghiệp, tiến hành đánh giá và đưa ra quyết
+                  định.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>Đánh giá công đoạn.</td>
+              </tr>
+              <tr>
+                <td>Công cụ</td>
+                <td>Tiêu chuẩn ISO 2015.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="project-02">
+            <img
+              src="./images/project02.png"
+              alt="project-02"
+              style="width: 100%; height: 400px"
+            />
+            <div class="project-title"><p>CV CÁ NHÂN</p></div>
+            <div class="project-rol">
+              <i class="now">2023</i><i class="icon-user-1"></i>FUNIX<i
+                class="icon-lamp"
+              ></i
+              >Developer
+            </div>
+            <table class="project-content">
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                  như kỹ năng nghề nghiệp.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>Phát triển, tối ưu code và xử lý lỗi.</td>
+              </tr>
+              <tr>
+                <td>Công cụ</td>
+                <td>HTML, CSS.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CONTACT-->
+    <footer>
+      <div class="footer">
+        <a href="https://www.facebook.com"
+          ><i class="icon-facebook-circled"></i>Facebook</a
+        >
+        <a href="https://wwww.linkedin.com"
+          ><i class="icon-linkedin-circled"></i>Linkedin</a
+        >
+        <a href="https://www.github.com"
+          ><i class="icon-github-circled"></i>Github</a
+        >
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
