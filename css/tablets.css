@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .title-01 {
+    display: none;
+  }
+  .job-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .certification {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-info {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}

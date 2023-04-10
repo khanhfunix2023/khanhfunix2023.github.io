@@ -1,0 +1,241 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/* ERROR EMAIL*/
+#error-email {
+  color: red;
+  font-size: large;
+}
+/*BANNER*/
+.banner {
+  position: relative;
+  height: 400px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-name {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+  font-size: larger;
+  color: #f6f3f3;
+}
+/*NAV-BAR*/
+nav {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  padding-left: 285px;
+}
+nav .title-01 span {
+  font-size: x-small;
+}
+nav > * {
+  display: flex;
+  flex: 1;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1px groove #81b4c1;
+  border-right: 0.1px groove #81b4c1;
+}
+nav > *:hover {
+  background-color: rgb(5, 150, 186);
+  color: #f6f3f3;
+}
+
+/*THONG TIN CA NHAN*/
+#about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#about > * {
+  border: 0.1px groove #81b4c1;
+  background-color: #eaecec;
+  gap: 10px;
+}
+#about ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.target {
+  padding: 40px;
+}
+.personal-info {
+  padding: 40px;
+}
+.section-title {
+  margin-bottom: 20px;
+}
+.banner-icon {
+  color: rgb(5, 150, 186);
+}
+/* HIDDEN INFO*/
+.info-hidden {
+  display: none;
+}
+/*JOB INFOMATION*/
+.job-info {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  gap: 15px;
+}
+.section-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 20% 80%;
+  margin-top: 40px;
+  border: 0.1px groove #81b4c1;
+}
+.title {
+  height: 70px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.section-icon {
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px;
+}
+.section-content {
+  grid-column: 1 / 3;
+}
+.section-content ul {
+  padding: 20px;
+}
+.now {
+  color: white;
+  background-color: rgb(5, 150, 186);
+  border-radius: 12%;
+}
+/*HOBBY*/
+.hobby-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 35px;
+}
+.hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 20px;
+  text-align: center;
+}
+.hobby-icon > div {
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  text-align: center;
+  color: rgb(5, 150, 186);
+  border: 1.5px solid rgb(5, 150, 186);
+  border-radius: 50%;
+  font-size: 25px;
+  padding-top: 12px;
+}
+/*SKILL*/
+.skill {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.level-01 {
+  background: rgb(5, 150, 186);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.level-00 {
+  background: rgb(163, 167, 168);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/*CERTIFICATION*/
+.certification {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+/*PROJECT*/
+.project-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 35px;
+  gap: 20px;
+}
+.project-title {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.project-rol {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.project-content {
+  border-collapse: collapse;
+}
+.project-content td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1.5px solid #ccc;
+  border-top: 1.5px solid #ccc;
+  column-width: 300px;
+}
+/*FOOTER*/
+.footer {
+  display: inline-block;
+  font-size: 20px;
+  word-spacing: 40px;
+  padding: 15px;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: #eaecec;
+}
+/*ADD AVATAR*/
+.nav {
+  position: relative;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  position: absolute;
+  top: 300px;
+}
+/* CONTENT HIDDEN*/
+.section-container > .section-content {
+  display: none;
+}
+.view-more {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.view-less {
+  margin-left: 30px;
+  margin-top: -80px;
+}
+.view-more {
+  display: none;
+}
