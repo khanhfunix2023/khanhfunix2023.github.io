@@ -1,17 +1,39 @@
 @media (max-width: 576px) {
+  .nav {
+    padding: 5px 0px 5px 0px;
+    border: none;
+  }
   nav {
     flex-direction: column;
   }
   #about {
     grid-template-columns: auto;
   }
+  /*JOB INFORMATION*/
   .job-info {
+    padding: 0px 20px 0px 20px;
     grid-template-columns: 1fr;
+  }
+  /*CERTIFICATION*/
+  .cert-pic {
+    padding-bottom: 10px;
+  }
+  .line-02 {
+    display: none;
+  }
+  .line-01 {
+    border-bottom: 1.5px solid #d6c08d;
   }
   .certification {
     grid-template-columns: 1fr;
   }
+  /*PROJECT*/
   .project-info {
+    padding: 0px 20px 0px 20px;
     grid-template-columns: 1fr;
+  }
+  /*FOOTER*/
+  .footer {
+    font-size: 13px;
   }
 }

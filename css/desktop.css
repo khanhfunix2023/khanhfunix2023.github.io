@@ -37,8 +37,8 @@ nav {
   justify-content: center;
   padding-left: 285px;
 }
-nav .title-01 span {
-  font-size: x-small;
+.title-01 {
+  font-size: large;
 }
 nav > * {
   display: flex;
@@ -136,15 +136,15 @@ nav > *:hover {
   text-align: center;
 }
 .hobby-icon > div {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   align-items: center;
   text-align: center;
   color: rgb(5, 150, 186);
   border: 1.5px solid rgb(5, 150, 186);
   border-radius: 50%;
   font-size: 25px;
-  padding-top: 12px;
+  padding-top: 2px;
 }
 /*SKILL*/
 .skill {
@@ -156,14 +156,14 @@ nav > *:hover {
   display: inline-block;
   height: 2px;
   margin-right: 10px;
-  width: 45px;
+  width: 40px;
 }
 .level-00 {
   background: rgb(163, 167, 168);
   display: inline-block;
   height: 2px;
   margin-right: 10px;
-  width: 45px;
+  width: 40px;
 }
 /*CERTIFICATION*/
 .certification {
@@ -173,19 +173,37 @@ nav > *:hover {
   gap: 30px;
   padding-top: 30px;
 }
+.cert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.line-01 {
+  border-left: 1.5px solid #d6c08d;
+}
+.line-02 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-bottom: 1.5px solid #d6c08d;
+}
 /*PROJECT*/
 .project-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
   gap: 20px;
 }
 .project-title {
+  padding: 5px;
+  border: 1px solid #ccc;
   font-weight: bold;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 .project-rol {
+  padding: 5px;
+  border: 1px solid #ccc;
   display: flex;
   gap: 10px;
   padding-bottom: 10px;
@@ -194,11 +212,11 @@ nav > *:hover {
   border-collapse: collapse;
 }
 .project-content td {
+  padding: 5px;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1.5px solid #ccc;
-  border-top: 1.5px solid #ccc;
-  column-width: 300px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 /*FOOTER*/
 .footer {
@@ -210,19 +228,6 @@ nav > *:hover {
   width: 100%;
   text-align: center;
   background-color: #eaecec;
-}
-/*ADD AVATAR*/
-.nav {
-  position: relative;
-}
-.avatar {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 8px solid white;
-  position: absolute;
-  top: 300px;
 }
 /* CONTENT HIDDEN*/
 .section-container > .section-content {
